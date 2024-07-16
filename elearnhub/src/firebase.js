@@ -4,15 +4,14 @@ import { getFirestore } from "firebase/firestore";
 import { getStorage } from "firebase/storage";
 //import { getAnalytics } from "firebase/analytics";
 const firebaseConfig = {
-  apiKey: "AIzaSyDpXAR-VXXSpByqhF0gAim-YJZGKpWljn8",
-  authDomain: "elearnhub-521b1.firebaseapp.com",
-  projectId: "elearnhub-521b1",
-  storageBucket: "elearnhub-521b1.appspot.com",
-  messagingSenderId: "1078525993075",
-  appId: "1:1078525993075:web:a3758475c8d44b0eeb4a06",
-  measurementId: "G-37HXC678GP"
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+  authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_FIREBASE_APP_ID,
+  measurementId: process.env.REACT_APP_FIREBASE_MEASUREMENT_ID
 };
-
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 const db = getFirestore(app);
