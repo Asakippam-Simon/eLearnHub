@@ -21,7 +21,8 @@ const Login = () => {
       navigate('/Dashboard');
   };
 
-  return (
+    return (
+	 <div class="container">
     <form onSubmit={handleLogin}>
       <h2>Login</h2>
       <input
@@ -41,6 +42,7 @@ const Login = () => {
       <button type="submit">Login</button>
       {error && <p>{error}</p>}
     </form>
+	     </div>
   );
 };
 

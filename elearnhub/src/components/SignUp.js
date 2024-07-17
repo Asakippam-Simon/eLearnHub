@@ -38,7 +38,8 @@ const SignUp = () => {
        navigate('/Dashboard');
   };
 
-  return (
+    return (
+	 <div class="container">
     <form onSubmit={handleSignUp}>
       <h2>Sign Up</h2>
       <input
@@ -58,6 +59,7 @@ const SignUp = () => {
       <button type="submit">Sign Up</button>
       {error && <p style={{ color: 'red' }}>{error}</p>}
     </form>
+	     </div>
   );
 };
 
