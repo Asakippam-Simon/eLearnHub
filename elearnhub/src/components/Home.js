@@ -1,14 +1,37 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import { fetchUploadedFiles } from '../utils/fetchFiles';
+//import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Home = () => {
+      const [fileUrls, setFileUrls] = useState([]);
+
+  useEffect(() => {
+    const getFiles = async () => {
+      const urls = await fetchUploadedFiles();
+      setFileUrls(urls);
+    };
+    getFiles();
+  }, []);
+    //
     return (
 	<section>
 	     <div class="container">
 		<h1>Welcome to eLearnHub</h1>
 		<p>eLearnHub is a centralized platform for storing and sharing educational materials and taking online assessments</p>
 		<p>Sign Up or Login to submit your assignment or take today's online assessment.</p>
-	    </div>
+	     </div>
+
+	     <div class="container">
+		 <h2>Uploaded Materials</h2>
+		 <ul>
+		     {fileUrls.map((url, index) => (
+			 <li key={index}>
+			     <a href={url} target="_blank" rel="noopener noreferrer">Download Material {index + 1}</a>
+			 </li>
+		     ))}
+		 </ul>
+	     </div>
 	   
     <main>
         <section id="articles">
