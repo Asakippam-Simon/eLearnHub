@@ -12,7 +12,8 @@ const Login = () => {
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
-      await signInWithEmailAndPassword(auth, email, password);
+	await signInWithEmailAndPassword(auth, email, password);
+	alert('Login successful!');
       navigate('/dashboard'); // Redirect after successful login
     } catch (error) {
       setError(error.message); // Display error message

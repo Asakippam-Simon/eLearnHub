@@ -1,11 +1,12 @@
 import React from 'react';
 import UploadMaterial from './UploadMaterial';
-
+import AssessmentHome from './AssessmentHome';
 const Dashboard = () => {
-  return (
-    <div>
-      <UploadMaterial />
-    </div>
+    return (
+	<ul>
+	<div><UploadMaterial /></div>
+	<div><AssessmentHome /></div>
+	</ul>    
   );
 };
 

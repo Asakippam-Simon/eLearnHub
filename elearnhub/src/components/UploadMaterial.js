@@ -34,7 +34,7 @@ const UploadMaterial = () => {
 
   return (
     <form onSubmit={handleSubmit}>
-      <h2>Upload Material</h2>
+      <h2>Upload Assignment</h2>
       <input type="file" onChange={handleFileChange} required />
       <input type="text" name="title" placeholder="Title" onChange={handleInputChange} required />
       <textarea name="description" placeholder="Description" onChange={handleInputChange} required></textarea>
