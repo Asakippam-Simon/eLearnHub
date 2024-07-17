@@ -1,0 +1,16 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
+
+const Home = () => {
+  return (
+    <div>
+      <h1>Welcome to the Assessment</h1>
+      <p>Answer the following questions within the time limit. Good luck!</p>
+      <Link to="/questions">
+        <button>Start Assessment</button>
+      </Link>
+    </div>
+  );
+};
+
+export default Home;

@@ -17,6 +17,7 @@ const Login = () => {
     } catch (error) {
       setError(error.message); // Display error message
     }
+      navigate('/Dashboard');
   };
 
   return (

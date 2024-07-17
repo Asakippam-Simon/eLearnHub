@@ -4,7 +4,6 @@ import UploadMaterial from './UploadMaterial';
 const Dashboard = () => {
   return (
     <div>
-      <h1>eLearnHub Dashboard</h1>
       <UploadMaterial />
     </div>
   );
