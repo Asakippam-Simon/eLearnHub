@@ -6,9 +6,11 @@ import SignUp from './components/SignUp';
 import Login from './components/Login';
 import Dashboard from './components/Dashboard';
 import UploadMaterial from './components/UploadMaterial';
+import LectureMaterial from './components/LectureMaterial';
 import AssessmentHome from './components/AssessmentHome';
 import AssessmentQuestion from './components/AssessmentQuestion';
 import AssessmentResults from './components/AssessmentResults';
+import DownLoad from './components/DownLoad';
 import './index.css';
 
 const App = () => {
@@ -22,6 +24,8 @@ const App = () => {
                   <Route path="/login" element={<Login />} />
                   <Route path="/dashboard" element={<Dashboard />} />
                   <Route path="/upload-material" element={<UploadMaterial />} />
+		  <Route path="/upload-lecture-material" element={<LectureMaterial />} />
+		  <Route path="/Download" element={<DownLoad />} />
 	          <Route path="/assessment" element={<AssessmentHome />} />
                   <Route path="/assessment/questions" element={<AssessmentQuestion />} />
                   <Route path="/assessment/results" element={<AssessmentResults />} />

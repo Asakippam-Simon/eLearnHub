@@ -7,12 +7,11 @@ const Header = () => {
       <ul>
         <li><Link to="/">Home</Link></li>
 	<li><Link to="/signup">Sign Up</Link></li>
-        <li><Link to="/login">Sign In</Link></li>     
+         <li><Link to="/login">Sign In</Link></li>
+	 <li><Link to="/Download">Download Lecture Material</Link></li>
       </ul>
     </nav>
   );
 };
 
 export default Header;
-// <li><Link to="/Dashboard">Upload Assignment</Link></li>
- // <li><Link to="/assessment">Take Assessement</Link></li>
