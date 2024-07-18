@@ -30,11 +30,13 @@ const LectureMaterial = () => {
     );
   };
 
-  return (
-    <div>
-      <input type="file" onChange={handleFileChange} />
-      <button onClick={handleUpload}>Upload Lecture Material</button>
-    </div>
+    return (
+	<form>
+	    <div clase="container">
+		<input type="file" onChange={handleFileChange} />
+		<button onClick={handleUpload}>Upload Lecture Material</button>
+	    </div>
+	    </form>
   );
 };
 

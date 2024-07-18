@@ -1,5 +1,6 @@
 //import React from 'react';
-import UploadMaterial from './UploadMaterial';
+import UploadMaterial from './UploadMaterial';//Assigment only
+import LectureMaterial from './LectureMaterial';//Lecture Notes only
 import AssessmentHome from './AssessmentHome';
 import React, { useEffect, useState } from 'react';
 import { fetchUploadedFiles } from './FetchFiles';
@@ -18,6 +19,7 @@ const Dashboard = () => {
 	<ul>
 	<div><UploadMaterial /></div>
 	    <div><AssessmentHome /></div>
+	    <div><LectureMaterial/></div>
 	    <div>
            {fileUrls.map((url, index) => (
           <li key={index}>

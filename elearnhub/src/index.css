@@ -25,7 +25,7 @@ header, footer, nav {
   background-color: #333;
   color: white;
   padding: 20px 0;
-  text-align: center;
+  text-align: justify;
 }
 
 header h1, h1, h2 {
@@ -56,7 +56,7 @@ nav ul li a:hover {
 /* Style for main content area */
 main {
   flex: 1;
-  padding: 20px;
+  padding: 1px;
 }
 
 /* Form Styles */
@@ -71,14 +71,14 @@ form {
 
 input, textarea, button {
   display: block;
-  width: 100%;
+  width: 90%;
   margin-bottom: 1rem;
 }
 
 input, textarea {
   padding: 0.5rem;
   border: 1px solid #ddd;
-  border-radius: 4px;
+  border-radius:4px;
 }
 
 button {
@@ -106,18 +106,18 @@ button:hover {
 .container {
   width: 80%;
   margin: auto;
-  padding: 20px;
+  padding: 10px;
 }
 
 section {
-  padding: 40px 0;
+  padding: 20px 0;
 }
 
 footer {
-  background-color: #333;
+  background-color: #143;
   color: white;
   text-align: center;
-  padding: 20px 0;
+  padding: 10px 0;
 }
 
 /* Utility Classes */
@@ -138,7 +138,7 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 8px;
+  padding: 10px;
   background-color: #f0f0f0;
 }
 
@@ -155,7 +155,7 @@ footer {
 
 .search-container button[type="submit"] {
   padding: 8px 12px;
-  background-color: #4CAF50;
+  background-color: #4DA450;
   color: white;
   border: none;
   border-radius: 5px;
@@ -167,22 +167,22 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 50vh;
+  height: 20vh;
 }
 
 .cylindrical-link {
   display: inline-block;
   background-color: #4CAF50;
   color: white;
-  padding: 10px 20px;
-  border-radius: 20px;
-  line-height: 40px;
+  padding: 9px 8px;
+  border-radius: 10px;
+  line-height:30px;
   text-align: center;
   text-decoration: none;
   transform: translateY(-20px);
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
   position: relative;
-  width: 160px;
+  width: 120px;
 }
 
 .cylindrical-link a {
@@ -214,8 +214,8 @@ footer {
 }
 
 .newsletter-section input[type="email"] {
-  padding: 10px;
-  width: 200px;
+  padding: 20px;
+  width: 100px;
   border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 16px;
