@@ -53,6 +53,11 @@ nav ul li a:hover {
   text-decoration: underline;
 }
 
+.justified-text {
+    text-align: justify;
+}
+
+
 /* Style for main content area */
 main {
   flex: 1;

@@ -5,6 +5,7 @@ import Home from './components/Home';
 import SignUp from './components/SignUp';
 import Login from './components/Login';
 import Dashboard from './components/Dashboard';
+import PrivateRoute from './components/PrivateRoute';
 import UploadMaterial from './components/UploadMaterial';
 import LectureMaterial from './components/LectureMaterial';
 import AssessmentHome from './components/AssessmentHome';
@@ -22,6 +23,14 @@ const App = () => {
 		  <Route path="/" element={<Home />} />
 		  <Route path="/signup" element={<SignUp />} />
                   <Route path="/login" element={<Login />} />
+		  <Route
+		      path="/dashboard"
+		      element={
+			  <PrivateRoute>
+			      <Dashboard />
+			  </PrivateRoute>
+		      }
+		  />
                   <Route path="/dashboard" element={<Dashboard />} />
                   <Route path="/upload-material" element={<UploadMaterial />} />
 		  <Route path="/upload-lecture-material" element={<LectureMaterial />} />
