@@ -12,6 +12,8 @@ import AssessmentHome from './components/AssessmentHome';
 import AssessmentQuestion from './components/AssessmentQuestion';
 import AssessmentResults from './components/AssessmentResults';
 import DownLoad from './components/DownLoad';
+import AdminRoute from './components/AdminRoute';
+import AdminDashboard from './components/AdminDashboard';
 import './index.css';
 
 const App = () => {
@@ -30,6 +32,14 @@ const App = () => {
 			      <Dashboard />
 			  </PrivateRoute>
 		      }
+		  />
+		  <Route
+		  path="/admin"
+		  element={
+		      <AdminRoute>
+			  <AdminDashboard />
+		      </AdminRoute>
+		  }
 		  />
                   <Route path="/dashboard" element={<Dashboard />} />
                   <Route path="/upload-material" element={<UploadMaterial />} />
